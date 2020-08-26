@@ -20,7 +20,6 @@ export default {
   mixins: [require("simple-vue-validator").mixin],
   validators: {
     "todo.name"(value) {
-      console.log(value);
       return Validator.value(value).required("Поле не может быть пустым");
     },
   },
